@@ -1,0 +1,9 @@
+[package]
+name = "ant-simulation"
+version = "0.1.0"
+authors = ["Hong-ryul Jung <jung.hr.1206@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
