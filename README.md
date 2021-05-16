@@ -21,8 +21,9 @@ Rust-lang practice motivated by Pezzza's Work and Sebastian Lague
 
 1. `yarn install`
 2. `cargo build --target wasm32-unknown-unknown`
-3. `wasm-pack build`
-4. `yarn build`
+
+<!-- 3. `wasm-pack build`
+4. `yarn build` -->
 
 ## How to Run
 
@@ -30,4 +31,4 @@ Rust-lang practice motivated by Pezzza's Work and Sebastian Lague
 
 ## Good Materials to Learn
 
-- Doug Milford, "[Rust 3D Graphics in the Browser: Boilerplate Setup and WASM Introduction](https://youtu.be/p7DtoeuDT5Y)"
+- Doug Milford, YouTube: "[Rust 3D Graphics in the Browser: Boilerplate Setup and WASM Introduction](https://youtu.be/p7DtoeuDT5Y)"
