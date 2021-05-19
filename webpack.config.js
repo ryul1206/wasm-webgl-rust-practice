@@ -4,6 +4,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
 
 // The webpack-dev-server is for live development.
+const dist = path.resolve(__dirname, "dist");
 
 module.exports = (env, args) => {
   const isProductionMode = args.mode === "production"; // Similar to release mode
@@ -11,14 +12,17 @@ module.exports = (env, args) => {
   return {
     entry: "./web/index.js",
     output: {
-      path: path.resolve(__dirname, "dist"),
-      filename: isProductionMode
-        ? "[name].[contenthash].js"
-        : "[name].[chunkhash].js",
+      path: dist,
+      filename: "[name].js",
+      // filename: isProductionMode
+      //   ? "[name].[contenthash].js"
+      //   : "[name].[chunkhash].js",
+    },
+    devServer: {
+      contentBase: dist,
     },
     experiments: {
       asyncWebAssembly: true,
-      // syncWebAssembly: true,
     },
     plugins: [
       new HtmlWebpackPlugin({

@@ -29,6 +29,6 @@ Rust-lang practice motivated by Pezzza's Work and Sebastian Lague
 
 1. `yarn dev`
 
-## Good Materials to Learn
+## Good Materials
 
-- Doug Milford, YouTube: "[Rust 3D Graphics in the Browser: Boilerplate Setup and WASM Introduction](https://youtu.be/p7DtoeuDT5Y)"
+- Doug Milford, YouTube video series "Rust 3D Graphics in the Browser" [(1)](https://youtu.be/p7DtoeuDT5Y), [(2)](https://youtu.be/kjYCSySObDo), [(3)](https://youtu.be/K63uBfs1K7Y)
