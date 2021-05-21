@@ -1,5 +1,7 @@
-# Ant Simulation
+<!-- # Ant Simulation -->
+# WASM + WebGL + Rust Practice
 
+<!--
 Rust-lang practice motivated by Pezzza's Work and Sebastian Lague
 
 - Pezzza's Work
@@ -16,14 +18,14 @@ Rust-lang practice motivated by Pezzza's Work and Sebastian Lague
   - [wasm32-unknown-unknown](https://rustwasm.github.io/docs/wasm-pack/prerequisites/non-rustup-setups.html)
 - Nodejs
   - yarn (optional)
+-->
 
 ## How to Build
 
 1. `yarn install`
-2. `cargo build --target wasm32-unknown-unknown`
-
-<!-- 3. `wasm-pack build`
-4. `yarn build` -->
+<!-- 2. `cargo build --target wasm32-unknown-unknown` -->
+<!-- 3. `wasm-pack build` -->
+<!-- 4. `yarn build` -->
 
 ## How to Run
 

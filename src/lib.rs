@@ -25,6 +25,7 @@ extern "C" {
 pub struct RustClient {
     gl: WebGlRenderingContext,
     program_color_2d: programs::Color2D,
+    program_color_2d_gradient: programs::Color2DGradient,
 }
 
 #[wasm_bindgen]
@@ -36,6 +37,7 @@ impl RustClient {
 
         Self {
             program_color_2d: programs::Color2D::new(&gl),
+            program_color_2d_gradient: programs::Color2DGradient::new(&gl),
             gl: gl,
         }
     }
@@ -58,6 +60,18 @@ impl RustClient {
             curr_state.control_right,
             curr_state.canvas_height,
             curr_state.canvas_width,
-        )
+        );
+
+        let padding = 20.;
+
+        self.program_color_2d_gradient.render(
+            &self.gl,
+            curr_state.control_bottom + padding,
+            curr_state.control_top - padding,
+            curr_state.control_left + padding,
+            curr_state.control_right - padding,
+            curr_state.canvas_height,
+            curr_state.canvas_width,
+        );
     }
 }

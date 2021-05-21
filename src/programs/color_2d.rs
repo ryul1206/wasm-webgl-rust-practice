@@ -17,8 +17,8 @@ impl Color2D {
     pub fn new(gl: &WebGlRenderingContext) -> Self {
         let program = cf::link_program(
             &gl,
-            super::super::shaders::vertex::color_2d::SHADER,
-            super::super::shaders::fragment::color_2d::SHADER,
+            super::super::shaders::vertex::color_2d::SHADER, // from 'shaders' folder
+            super::super::shaders::fragment::color_2d::SHADER, // from 'shaders' folder
         )
         .unwrap();
 
